@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsxdev",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment"
+  }
+}

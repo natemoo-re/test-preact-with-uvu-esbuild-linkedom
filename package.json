@@ -1,0 +1,16 @@
+{
+  "name": "uvu-esbuild-linkedom",
+  "private": true,
+  "scripts": {
+    "test": "uvu -r esbuild-register"
+  },
+  "dependencies": {
+    "preact": "^10.5.12"
+  },
+  "devDependencies": {
+    "@testing-library/preact": "^2.0.1",
+    "esbuild-register": "^2.0.0",
+    "linkedom": "^0.4.24",
+    "uvu": "^0.5.1"
+  }
+}
