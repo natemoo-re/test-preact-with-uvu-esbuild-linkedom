@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@testing-library/preact": "^2.0.1",
+    "esbuild": "^0.8.49",
     "esbuild-register": "^2.0.0",
     "linkedom": "^0.4.24",
     "uvu": "^0.5.1"
