@@ -1,5 +1,4 @@
 import { parseHTML } from 'linkedom';
-import * as Preact from 'preact';
 
 const { window } = parseHTML(`
 <!doctype html>
@@ -12,20 +11,15 @@ const { window } = parseHTML(`
 `);
 
 export function setup() {
-	global.window = window;
-	global.document = window.document;
-	global.navigator = window.navigator;
-	global.getComputedStyle = window.getComputedStyle;
-	global.requestAnimationFrame = null;
+	globalThis.window = window;
+	globalThis.document = window.document;
+	globalThis.navigator = window.navigator;
+	globalThis.getComputedStyle = window.getComputedStyle;
+	globalThis.requestAnimationFrame = null;
 }
 
 export function reset() {
 	window.document.title = '';
 	window.document.head.innerHTML = '';
 	window.document.body.innerHTML = '<main></main>';
-}
-
-interface RenderOutput {
-  container: HTMLElement;
-  component: Preact.VNode;
 }
